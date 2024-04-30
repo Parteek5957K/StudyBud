@@ -1,0 +1,326 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+      <link rel="stylesheet" href="{% static 'styles/snippedd.css' %}">
+      <link rel="stylesheet" href="{% static 'styles/snipped1.css' %}">
+   </head>
+   <body style="background-color: white;">
+    <nav class="navigation dark-mode">
+        <div class="navigation__inner">
+            <div class="navigation__header"><button type="button" class="navigation__close"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M7.868 17.768a1 1 0 01-1.492-1.327l.078-.087 9.9-9.9a1 1 0 011.491 1.327l-.077.087-9.9 9.9z" fill="#FF6F61"></path>
+                            <path d="M15.56 14.155l.086.077 2.122 2.122a1 1 0 01-1.327 1.491l-.087-.077-2.122-2.122a1 1 0 011.327-1.491zM7.78 6.376l.087.078L9.99 8.575a1 1 0 01-1.327 1.492l-.088-.077-2.12-2.122A1 1 0 017.78 6.376z" fill="#9656A1" fill-rule="nonzero"></path>
+                        </g>
+                    </svg></button><a class="hover:cursor-pointer" href="javascript:;"><svg width="31" height="32" viewBox="0 0 31 32" class="navigation__logo--medium" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5714 21.1509L20.5961 21.1745L24.8458 25.4063C25.4098 25.0385 26.0837 24.8248 26.8075 24.8248C28.7913 24.8248 30.4002 26.4306 30.4002 28.4123C30.4002 30.394 28.7913 31.9998 26.8075 31.9998C24.8236 31.9998 23.2148 30.394 23.2148 28.4123C23.2148 27.7542 23.3922 27.1375 23.7019 26.6074L19.4257 22.3493C19.1013 22.0262 19.1003 21.5012 19.4234 21.1768C19.7385 20.8605 20.2455 20.8516 20.5714 21.1509ZM26.8075 26.4831C25.7387 26.4831 24.8729 27.3472 24.8729 28.4123C24.8729 29.4774 25.7387 30.3415 26.8075 30.3415C27.8763 30.3415 28.742 29.4774 28.742 28.4123C28.742 27.3472 27.8763 26.4831 26.8075 26.4831ZM8.87207 21.339C9.19047 21.652 9.20276 22.1589 8.90568 22.4868L8.88222 22.5116L6.78839 24.6462C7.12794 25.2008 7.32364 25.8529 7.32364 26.5506C7.32364 28.5704 5.68381 30.2071 3.66182 30.2071C1.63983 30.2071 0 28.5704 0 26.5506C0 24.5308 1.63983 22.8942 3.66182 22.8942C4.3842 22.8942 5.0578 23.1031 5.62528 23.4637L7.6996 21.3492C8.02056 21.0226 8.5455 21.018 8.87207 21.339ZM3.66182 24.5525C2.55487 24.5525 1.65818 25.4475 1.65818 26.5506C1.65818 27.6538 2.55487 28.5487 3.66182 28.5487C4.76877 28.5487 5.66545 27.6538 5.66545 26.5506C5.66545 25.4475 4.76877 24.5525 3.66182 24.5525ZM18.8083 23.5536L20.012 24.7545C18.3542 25.8473 16.3679 26.4833 14.2327 26.4833C12.1332 26.4833 10.1776 25.8683 8.5367 24.8088L9.74317 23.6049C11.0591 24.3801 12.5938 24.825 14.2327 24.825C15.9075 24.825 17.4734 24.3605 18.8083 23.5536ZM5.40755 10.3152L6.61288 11.5181C5.83528 12.8317 5.38909 14.3639 5.38909 16C5.38909 17.6359 5.83519 19.168 6.61265 20.4815L5.40729 21.6844C4.34664 20.0469 3.73091 18.0953 3.73091 16C3.73091 13.9046 4.34674 11.9528 5.40755 10.3152ZM18.1018 17.0867L18.1018 19.7141C18.1018 20.1618 17.7469 20.5267 17.3031 20.5427L17.2727 20.5432H11.1927C10.745 20.5432 10.3802 20.1883 10.3642 19.7445L10.3636 19.7141L10.3635 17.0872L12.0217 17.8981L12.0218 18.8849H16.4436L16.4435 17.8977L18.1018 17.0867ZM27.2218 12.9642C28.9004 12.9642 30.2618 14.323 30.2618 16C30.2618 17.677 28.9004 19.0358 27.2218 19.0358C25.8309 19.0358 24.6578 18.1029 24.2965 16.829L22.5235 16.8292C22.0656 16.8292 21.6944 16.458 21.6944 16.0001C21.6945 15.5536 22.0474 15.1896 22.4894 15.1716L22.5236 15.1709L24.2966 15.1707C24.658 13.897 25.831 12.9642 27.2218 12.9642ZM14.5972 10.8118L20.2981 13.5999C20.4407 13.6696 20.5543 13.7748 20.6335 13.8996C20.7813 14.0436 20.8755 14.2423 20.8834 14.4631L20.884 14.4935V17.8035C20.884 18.2614 20.5128 18.6326 20.0549 18.6326C19.6072 18.6326 19.2423 18.2777 19.2264 17.8339L19.2258 17.8035L19.2257 15.614L14.5968 17.8782C14.367 17.9906 14.0981 17.9906 13.8683 17.8782L8.16734 15.0901C7.756 14.889 7.58566 14.3924 7.78687 13.981C7.86789 13.8154 8.00179 13.6815 8.16742 13.6005L13.8686 10.8118C14.0985 10.6994 14.3674 10.6994 14.5972 10.8118ZM27.2218 14.6225C26.4583 14.6225 25.84 15.2396 25.84 16L25.84 16.0041C25.8422 16.7626 26.4597 17.3775 27.2218 17.3775C27.9854 17.3775 28.6036 16.7604 28.6036 16C28.6036 15.2396 27.9854 14.6225 27.2218 14.6225ZM14.2328 12.4795L10.4188 14.3452L14.2327 16.2103L18.0467 14.3448L14.2328 12.4795ZM3.71027 2.46329C5.38885 2.46329 6.75028 3.82211 6.75028 5.49913C6.75028 6.02807 6.61484 6.52536 6.37674 6.95834L9.73092 10.1085C10.0586 10.4284 10.065 10.9533 9.74512 11.281C9.43325 11.6004 8.92641 11.6145 8.59752 11.3185L8.57257 11.2952L5.21207 8.13925C4.76903 8.39112 4.25644 8.53498 3.71027 8.53498C2.0317 8.53498 0.670275 7.17616 0.670275 5.49913C0.670275 3.82211 2.0317 2.46329 3.71027 2.46329ZM26.6691 0C28.6529 0 30.2618 1.60581 30.2618 3.58751C30.2618 5.56921 28.6529 7.17501 26.6691 7.17501C25.9774 7.17501 25.3312 6.97979 24.783 6.64147L20.622 10.7944C20.2979 11.1179 19.773 11.1174 19.4495 10.7932C19.1342 10.4772 19.1268 9.97021 19.427 9.64523L19.4507 9.6206L23.6099 5.46957C23.2716 4.92248 23.0764 4.2778 23.0764 3.58751C23.0764 1.60581 24.6853 0 26.6691 0ZM14.2327 5.51666C16.3322 5.51666 18.2878 6.13167 19.9287 7.19109L18.7223 8.39513C17.4063 7.61986 15.8716 7.17501 14.2327 7.17501C12.594 7.17501 11.0595 7.61974 9.74371 8.39481L8.5371 7.1909C10.1779 6.1316 12.1334 5.51666 14.2327 5.51666ZM3.71027 4.12164C2.94674 4.12164 2.32846 4.73874 2.32846 5.49913C2.32846 6.25952 2.94674 6.87663 3.71027 6.87663C4.47381 6.87663 5.09209 6.25952 5.09209 5.49913C5.09209 4.73874 4.47381 4.12164 3.71027 4.12164ZM26.6691 1.65835C25.6003 1.65835 24.7345 2.52244 24.7345 3.58751C24.7345 4.65258 25.6003 5.51666 26.6691 5.51666C27.7379 5.51666 28.6036 4.65258 28.6036 3.58751C28.6036 2.52244 27.7379 1.65835 26.6691 1.65835Z" fill="#FF6F61"></path>
+                    </svg><svg width="123" height="32" viewBox="0 0 123 32" class="navigation__logo--mobile" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6 21.2L24.9 25.5C25.5 25.1 26.1 24.9 26.9 24.9C28.9 24.9 30.5 26.5 30.5 28.5C30.5 30.5 28.8 32 26.8 32C24.8 32 23.2 30.4 23.2 28.4C23.2 27.7 23.4 27.1 23.7 26.6L19.4 22.3C19.1 22 19.1 21.5 19.4 21.1C19.7 20.9 20.2 20.9 20.6 21.2ZM26.8 26.5C25.7 26.5 24.9 27.4 24.9 28.4C24.9 29.4 25.8 30.3 26.8 30.3C27.8 30.3 28.7 29.4 28.7 28.4C28.7 27.4 27.9 26.5 26.8 26.5ZM8.9 21.3C9.2 21.6 9.2 22.1 8.9 22.4L6.8 24.5C7.1 25.1 7.3 25.7 7.3 26.4C7.3 28.4 5.7 30.1 3.6 30.1C1.5 30.1 0 28.6 0 26.6C0 24.6 1.6 22.9 3.7 22.9C4.4 22.9 5.1 23.1 5.7 23.5L7.8 21.4C8 21 8.5 21 8.9 21.3ZM3.7 24.6C2.6 24.6 1.7 25.5 1.7 26.6C1.7 27.7 2.6 28.6 3.7 28.6C4.8 28.6 5.7 27.7 5.7 26.6C5.7 25.4 4.8 24.6 3.7 24.6ZM18.8 23.6L20 24.8C18.3 25.9 16.4 26.5 14.2 26.5C12.1 26.5 10.1 25.9 8.5 24.8L9.7 23.6C11 24.4 12.6 24.8 14.2 24.8C15.9 24.8 17.5 24.4 18.8 23.6ZM5.4 10.3L6.6 11.5C5.8 12.8 5.4 14.3 5.4 16C5.4 17.6 5.8 19.2 6.6 20.5L5.4 21.7C4.3 20 3.7 18.1 3.7 16C3.7 13.9 4.3 12 5.4 10.3ZM18.1 17.1V19.7C18.1 20.1 17.7 20.5 17.3 20.5H11.2C10.8 20.5 10.4 20.1 10.4 19.7V17.1L12.1 17.9V18.9H16.5V17.9L18.1 17.1ZM27.2 13C28.9 13 30.2 14.4 30.2 16C30.2 17.6 28.8 19 27.2 19C25.8 19 24.6 18.1 24.3 16.8H22.5C22 16.8 21.7 16.4 21.7 16C21.7 15.6 22.1 15.2 22.5 15.2H24.3C24.7 13.9 25.8 13 27.2 13ZM14.6 10.8L20.3 13.6C20.4 13.7 20.6 13.8 20.6 13.9C20.7 14 20.8 14.2 20.8 14.5V17.8C20.8 18.3 20.4 18.6 20 18.6C19.6 18.6 19.2 18.2 19.2 17.8V15.6L14.6 17.9C14.4 18 14.1 18 13.9 17.9L8.2 15.1C7.8 14.9 7.6 14.4 7.8 14C7.9 13.8 8 13.7 8.2 13.6L13.9 10.8C14.1 10.7 14.4 10.7 14.6 10.8ZM27.2 14.6C26.4 14.6 25.8 15.2 25.8 16C25.8 16.8 26.4 17.4 27.2 17.4C28 17.4 28.6 16.8 28.6 16C28.6 15.2 28 14.6 27.2 14.6ZM14.2 12.5L10.4 14.4L14.2 16.3L18 14.4L14.2 12.5ZM3.7 2.5C5.4 2.5 6.7 3.9 6.7 5.5C6.7 6 6.6 6.5 6.3 7L9.7 10.2C10 10.5 10 11 9.7 11.4C9.4 11.7 8.9 11.7 8.6 11.4L5.2 8.1C4.8 8.4 4.2 8.5 3.7 8.5C2 8.5 0.7 7.1 0.7 5.5C0.7 3.8 2 2.5 3.7 2.5ZM26.7 0C28.7 0 30.3 1.6 30.3 3.6C30.3 5.6 28.7 7.2 26.7 7.2C26 7.2 25.4 7 24.8 6.7L20.6 10.9C20.3 11.2 19.8 11.2 19.4 10.9C19.1 10.6 19.1 10.1 19.4 9.8L23.6 5.6C23.3 5.1 23.1 4.4 23.1 3.7C23.1 1.6 24.7 0 26.7 0ZM14.2 5.5C16.3 5.5 18.3 6.1 19.9 7.2L18.7 8.4C17.4 7.6 15.8 7.2 14.2 7.2C12.6 7.2 11 7.6 9.7 8.4L8.5 7.2C10.2 6.1 12.1 5.5 14.2 5.5ZM3.7 4.1C2.9 4.1 2.3 4.7 2.3 5.5C2.3 6.3 2.9 6.9 3.7 6.9C4.5 6.9 5.1 6.3 5.1 5.5C5.1 4.7 4.5 4.1 3.7 4.1ZM26.7 1.7C25.6 1.7 24.8 2.6 24.8 3.6C24.8 4.6 25.7 5.5 26.7 5.5C27.7 5.5 28.6 4.6 28.6 3.6C28.6 2.6 27.7 1.7 26.7 1.7Z" fill="#FF6F61"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1 23.4C59.5 15.7 48.4 15.6 48.8 23.4C48.4 31.3 59.5 31.3 59.1 23.4ZM69.8 19C58 11.4 57.7 35.4 70 28V22.8H65.8V24.9H67.7V26.9C61 29.6 62.8 16.1 68.4 20.8L69.8 19ZM48 19.9V17.7H39.2V19.9H42.3V29.1H44.9V19.9H48ZM79.5 19.9V17.7H72.4V29.1H79.7V27H75V24.4H78.9V22.2H75V19.9H79.5ZM90 19.9V17.7H81.2V19.9H84.3V29.1H86.9V19.9H90ZM100.9 29.1V17.7H98.3V22.1H94.4V17.7H91.8V29.1H94.4V24.4H98.3V29.1H100.9ZM110.7 19.9V17.7H103.6V29.1H110.9V26.9H106.2V24.3H110.1V22.1H106.2V19.8L110.7 19.9ZM51.4 23.4C51.2 18.6 56.7 18.6 56.5 23.4C56.7 28.3 51.2 28.3 51.4 23.4ZM46.7 4.10001C42.9 -0.199995 36.1 6.00001 42.1 8.70001C48.9 10.5 44.5 15.9 40.1 11.9L39.2 12.9C43.1 17.6 51.3 11.5 44.7 8.30001C44.5 8.20001 42.9 7.50001 42.8 7.50001C38.5 5.50001 43.7 2.20001 46 5.00001L46.7 4.10001ZM66.5 9.60001V2.90001H65.1C64.8 5.30001 66.4 13.8 62.4 13.3C58.4 13.8 60 5.30001 59.7 2.90001H58.2V9.60001C58 16.3 66.8 16.3 66.5 9.60001ZM56.3 4.10001V2.90001H47.9V4.10001H51.4V14.3H52.9V4.10001H56.3ZM78.3 8.50001C78.6 3.30001 74.2 2.40001 70 2.80001V14.3C74.2 14.7 78.5 13.8 78.3 8.50001ZM84.1 9.90001L87.5 2.90001H86C85.3 4.50001 84.1 7.10001 83.4 8.60001H83.3C82.6 7.00001 81.4 4.40001 80.7 2.90001H79.1L82.5 9.90001V14.3H84L84.1 9.90001ZM71.5 4.10001C78.7 2.70001 78.6 14.6 71.5 13.2V4.10001Z" fill="#9656A1"></path>
+                        <path d="M113.1 29.1V17.7H117.2C118 17.7 118.7 17.8 119.4 18C120.1 18.2 120.6 18.6 121 19.1C121.4 19.6 121.6 20.3 121.6 21.2C121.6 22 121.4 22.7 121 23.3C120.6 23.8 120.2 24.2 119.5 24.5L122.1 29.1H119.2L117 25H115.6V29.1H113.1ZM115.7 23H117C117.7 23 118.2 22.9 118.5 22.6C118.9 22.3 119 21.9 119 21.3C119 20.7 118.8 20.4 118.5 20.1C118.2 19.9 117.6 19.8 117 19.8H115.7V23Z" fill="#9656A1"></path>
+                    </svg><svg width="123" height="32" viewBox="0 0 123 32" class="navigation__logo--desktop" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6 21.2L24.9 25.5C25.5 25.1 26.1 24.9 26.9 24.9C28.9 24.9 30.5 26.5 30.5 28.5C30.5 30.5 28.8 32 26.8 32C24.8 32 23.2 30.4 23.2 28.4C23.2 27.7 23.4 27.1 23.7 26.6L19.4 22.3C19.1 22 19.1 21.5 19.4 21.1C19.7 20.9 20.2 20.9 20.6 21.2ZM26.8 26.5C25.7 26.5 24.9 27.4 24.9 28.4C24.9 29.4 25.8 30.3 26.8 30.3C27.8 30.3 28.7 29.4 28.7 28.4C28.7 27.4 27.9 26.5 26.8 26.5ZM8.9 21.3C9.2 21.6 9.2 22.1 8.9 22.4L6.8 24.5C7.1 25.1 7.3 25.7 7.3 26.4C7.3 28.4 5.7 30.1 3.6 30.1C1.5 30.1 0 28.6 0 26.6C0 24.6 1.6 22.9 3.7 22.9C4.4 22.9 5.1 23.1 5.7 23.5L7.8 21.4C8 21 8.5 21 8.9 21.3ZM3.7 24.6C2.6 24.6 1.7 25.5 1.7 26.6C1.7 27.7 2.6 28.6 3.7 28.6C4.8 28.6 5.7 27.7 5.7 26.6C5.7 25.4 4.8 24.6 3.7 24.6ZM18.8 23.6L20 24.8C18.3 25.9 16.4 26.5 14.2 26.5C12.1 26.5 10.1 25.9 8.5 24.8L9.7 23.6C11 24.4 12.6 24.8 14.2 24.8C15.9 24.8 17.5 24.4 18.8 23.6ZM5.4 10.3L6.6 11.5C5.8 12.8 5.4 14.3 5.4 16C5.4 17.6 5.8 19.2 6.6 20.5L5.4 21.7C4.3 20 3.7 18.1 3.7 16C3.7 13.9 4.3 12 5.4 10.3ZM18.1 17.1V19.7C18.1 20.1 17.7 20.5 17.3 20.5H11.2C10.8 20.5 10.4 20.1 10.4 19.7V17.1L12.1 17.9V18.9H16.5V17.9L18.1 17.1ZM27.2 13C28.9 13 30.2 14.4 30.2 16C30.2 17.6 28.8 19 27.2 19C25.8 19 24.6 18.1 24.3 16.8H22.5C22 16.8 21.7 16.4 21.7 16C21.7 15.6 22.1 15.2 22.5 15.2H24.3C24.7 13.9 25.8 13 27.2 13ZM14.6 10.8L20.3 13.6C20.4 13.7 20.6 13.8 20.6 13.9C20.7 14 20.8 14.2 20.8 14.5V17.8C20.8 18.3 20.4 18.6 20 18.6C19.6 18.6 19.2 18.2 19.2 17.8V15.6L14.6 17.9C14.4 18 14.1 18 13.9 17.9L8.2 15.1C7.8 14.9 7.6 14.4 7.8 14C7.9 13.8 8 13.7 8.2 13.6L13.9 10.8C14.1 10.7 14.4 10.7 14.6 10.8ZM27.2 14.6C26.4 14.6 25.8 15.2 25.8 16C25.8 16.8 26.4 17.4 27.2 17.4C28 17.4 28.6 16.8 28.6 16C28.6 15.2 28 14.6 27.2 14.6ZM14.2 12.5L10.4 14.4L14.2 16.3L18 14.4L14.2 12.5ZM3.7 2.5C5.4 2.5 6.7 3.9 6.7 5.5C6.7 6 6.6 6.5 6.3 7L9.7 10.2C10 10.5 10 11 9.7 11.4C9.4 11.7 8.9 11.7 8.6 11.4L5.2 8.1C4.8 8.4 4.2 8.5 3.7 8.5C2 8.5 0.7 7.1 0.7 5.5C0.7 3.8 2 2.5 3.7 2.5ZM26.7 0C28.7 0 30.3 1.6 30.3 3.6C30.3 5.6 28.7 7.2 26.7 7.2C26 7.2 25.4 7 24.8 6.7L20.6 10.9C20.3 11.2 19.8 11.2 19.4 10.9C19.1 10.6 19.1 10.1 19.4 9.8L23.6 5.6C23.3 5.1 23.1 4.4 23.1 3.7C23.1 1.6 24.7 0 26.7 0ZM14.2 5.5C16.3 5.5 18.3 6.1 19.9 7.2L18.7 8.4C17.4 7.6 15.8 7.2 14.2 7.2C12.6 7.2 11 7.6 9.7 8.4L8.5 7.2C10.2 6.1 12.1 5.5 14.2 5.5ZM3.7 4.1C2.9 4.1 2.3 4.7 2.3 5.5C2.3 6.3 2.9 6.9 3.7 6.9C4.5 6.9 5.1 6.3 5.1 5.5C5.1 4.7 4.5 4.1 3.7 4.1ZM26.7 1.7C25.6 1.7 24.8 2.6 24.8 3.6C24.8 4.6 25.7 5.5 26.7 5.5C27.7 5.5 28.6 4.6 28.6 3.6C28.6 2.6 27.7 1.7 26.7 1.7Z" fill="#FF6F61"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1 23.4C59.5 15.7 48.4 15.6 48.8 23.4C48.4 31.3 59.5 31.3 59.1 23.4ZM69.8 19C58 11.4 57.7 35.4 70 28V22.8H65.8V24.9H67.7V26.9C61 29.6 62.8 16.1 68.4 20.8L69.8 19ZM48 19.9V17.7H39.2V19.9H42.3V29.1H44.9V19.9H48ZM79.5 19.9V17.7H72.4V29.1H79.7V27H75V24.4H78.9V22.2H75V19.9H79.5ZM90 19.9V17.7H81.2V19.9H84.3V29.1H86.9V19.9H90ZM100.9 29.1V17.7H98.3V22.1H94.4V17.7H91.8V29.1H94.4V24.4H98.3V29.1H100.9ZM110.7 19.9V17.7H103.6V29.1H110.9V26.9H106.2V24.3H110.1V22.1H106.2V19.8L110.7 19.9ZM51.4 23.4C51.2 18.6 56.7 18.6 56.5 23.4C56.7 28.3 51.2 28.3 51.4 23.4ZM46.7 4.10001C42.9 -0.199995 36.1 6.00001 42.1 8.70001C48.9 10.5 44.5 15.9 40.1 11.9L39.2 12.9C43.1 17.6 51.3 11.5 44.7 8.30001C44.5 8.20001 42.9 7.50001 42.8 7.50001C38.5 5.50001 43.7 2.20001 46 5.00001L46.7 4.10001ZM66.5 9.60001V2.90001H65.1C64.8 5.30001 66.4 13.8 62.4 13.3C58.4 13.8 60 5.30001 59.7 2.90001H58.2V9.60001C58 16.3 66.8 16.3 66.5 9.60001ZM56.3 4.10001V2.90001H47.9V4.10001H51.4V14.3H52.9V4.10001H56.3ZM78.3 8.50001C78.6 3.30001 74.2 2.40001 70 2.80001V14.3C74.2 14.7 78.5 13.8 78.3 8.50001ZM84.1 9.90001L87.5 2.90001H86C85.3 4.50001 84.1 7.10001 83.4 8.60001H83.3C82.6 7.00001 81.4 4.40001 80.7 2.90001H79.1L82.5 9.90001V14.3H84L84.1 9.90001ZM71.5 4.10001C78.7 2.70001 78.6 14.6 71.5 13.2V4.10001Z" fill="#9656A1"></path>
+                        <path d="M113.1 29.1V17.7H117.2C118 17.7 118.7 17.8 119.4 18C120.1 18.2 120.6 18.6 121 19.1C121.4 19.6 121.6 20.3 121.6 21.2C121.6 22 121.4 22.7 121 23.3C120.6 23.8 120.2 24.2 119.5 24.5L122.1 29.1H119.2L117 25H115.6V29.1H113.1ZM115.7 23H117C117.7 23 118.2 22.9 118.5 22.6C118.9 22.3 119 21.9 119 21.3C119 20.7 118.8 20.4 118.5 20.1C118.2 19.9 117.6 19.8 117 19.8H115.7V23Z" fill="#9656A1"></path>
+                    </svg></a></div>
+            <ul class="navigation__content navigation__tabs ">
+                <li><a class="cursor-pointer navigation__link relative" href="{% url 'group_study' %}">
+                        <div class="navigation__link-icon flex justify-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.796 6a1 1 0 100 2h4.25c.3 0 .545.244.545.545v7.728a.545.545 0 01-.545.545h-8.5A.545.545 0 016 16.273V12.5a1 1 0 10-2 0v3.773a2.546 2.546 0 002.545 2.545h8.5a2.545 2.545 0 002.546-2.545v-1.92l3.828 2.733A1 1 0 0023 16.273V8.545a1 1 0 00-1.581-.813l-3.828 2.734v-1.92A2.545 2.545 0 0015.045 6h-4.25zM21 14.33l-2.689-1.921L21 10.489v3.84z" fill="#9656A1"></path>
+                                <path d="M8 7a3 3 0 11-6 0 3 3 0 016 0z" fill="#FF6F61"></path>
+                            </svg></div>
+                        <p>Study Rooms</p>
+                    </a></li>
+                <li><a class="cursor-pointer navigation__link relative" href="{% url 'solo_study' %}">
+                        <div class="navigation__link-icon flex justify-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.951 10.95a2.95 2.95 0 11-5.902 0 2.95 2.95 0 015.902 0zm-4.813 8.444c.569.29 1.191.606 1.862.606s1.294-.317 1.862-.606c.736-.375 1.381-.703 1.922-.237l1.5-1.32c-1.267-1.13-3.17-1.968-5.284-1.968-2.113 0-4.016.837-5.283 1.967l1.5 1.321c.54-.466 1.185-.138 1.921.237z" fill="#FF6F61"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21 11.92a9 9 0 10-3.839 7.454 1 1 0 00-1.148-1.638 7 7 0 112.955-5.06l-.101-.175a1 1 0 10-1.734.998l1.877 3.264 3.264-1.878a1 1 0 00-.997-1.733l-.38.219c.072-.476.107-.96.103-1.45z" fill="#9656A1"></path>
+                            </svg></div>
+                        <p>Solo study</p>
+                    </a></li>
+
+            </ul>
+            <hr class="mx-auto block w-[100%] border-[#F4F2F2] md:hidden">
+            <div class="md:hidden">
+                <ul class="navigation__content">
+                    <li><a class="navigation__link" href="javascript:;">
+                            <div class="navigation__link-icon flex justify-center"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path d="M6 21.778a3 3 0 01-3-3v-12a3 3 0 013-3l1.444-.001V3a1 1 0 011.994-.117L9.444 3v.777h5.111V3a1 1 0 011.994-.117l.007.117-.001.777H18a3 3 0 012.995 2.825l.005.176v12a3 3 0 01-3 3zM7.444 5.777H6a1 1 0 00-1 1v12a1 1 0 001 1h5l.297-.002c5.29-.09 7.703-2.605 7.703-7.997v-5a1 1 0 00-1-1l-1.445-.001v.779a1 1 0 01-1.993.116l-.006-.116-.001-.779H9.444v.779a1 1 0 01-1.993.116l-.007-.116v-.779z" fill="#9656A1" fill-rule="nonzero"></path>
+                                        <path d="M12.543 8.793c.602-.603 1.614-.22 1.701.593l.006.114v6.25a1 1 0 01-1.993.117l-.007-.117v-3.836l-1.418 1.418a1 1 0 01-1.32.083l-.094-.083a1 1 0 01-.083-1.32l.083-.094 3.125-3.125z" fill="#FF6F61"></path>
+                                    </g>
+                                </svg></div>
+                            <p>Events</p>
+                        </a></li>
+                    <li><a class="navigation__link" href="javascript:;">
+                            <div class="navigation__link-icon flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                    <path fill="#9656A1" fill-rule="evenodd" d="M10.071 3a1 1 0 01.941.662l1.71 4.758 4.758 1.71a1 1 0 010 1.882l-4.758 1.71-1.71 4.758a1 1 0 01-1.882 0l-1.71-4.758-4.758-1.71a1 1 0 010-1.882L7.42 8.42l1.71-4.758A1 1 0 0110.07 3zm0 3.958L8.984 9.984 5.958 11.07l3.026 1.087 1.087 3.026 1.087-3.026 3.026-1.087-3.026-1.087-1.087-3.026z" clip-rule="evenodd"></path>
+                                    <path fill="#FF6F61" fill-rule="evenodd" d="M16 6a1 1 0 100-2 1 1 0 000 2zm1.62 9.048a.4.4 0 00-.754 0l-.745 2.073-2.073.745a.4.4 0 000 .753l2.073.745.745 2.073a.4.4 0 00.753 0l.745-2.073 2.073-.745a.4.4 0 000-.753l-2.073-.745-.745-2.073z" clip-rule="evenodd"></path>
+                                </svg></div>
+                            <p>What’s new</p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navigation__backdrop"></div>
+    </nav>
+<div class="jsx-2145134340 mx-auto max-w-screen-lg flex-1 p-5 px-2 snipcss-paKme">
+    <div class="flex-row items-baseline justify-between space-y-0 overflow-x-hidden bg-gray-400 pt-3 md:space-y-10 lg:flex">
+        <div class="flex-row space-x-3 space-y-2  text-center lg:flex lg:space-y-0 lg:text-left">
+            <div class="flex-shrink-0">
+                <div class="user-image user-image--medium"><span class="user-image__avatar user-image__avatar--emerald object-cover"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3E"></span><img alt="user" src="{% static 'images/avatar-6.png' %}" decoding="async" data-nimg="intrinsic" class="user-image__avatar-image user-image__avatar--emerald" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span></span><svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" class="user-image__gem">
+                        <defs>
+                            <linearGradient id="GemstoneEmerald_svg__a" x1="36.734%" x2="77.236%" y1="0%" y2="171.671%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                            <linearGradient id="GemstoneEmerald_svg__b" x1="29.869%" x2="32.249%" y1="23.765%" y2="181.606%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                            <linearGradient id="GemstoneEmerald_svg__c" x1="36.656%" x2="80.707%" y1="0%" y2="75.032%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                            <linearGradient id="GemstoneEmerald_svg__d" x1="29.868%" x2="56.977%" y1="23.765%" y2="94.886%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                            <linearGradient id="GemstoneEmerald_svg__e" x1="29.869%" x2="79.664%" y1="0%" y2="84.817%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                            <linearGradient id="GemstoneEmerald_svg__f" x1="50%" x2="74.847%" y1="-21.081%" y2="82.745%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                            <linearGradient id="GemstoneEmerald_svg__g" x1="-39.255%" x2="73.311%" y1="-54.056%" y2="86.124%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                            <linearGradient id="GemstoneEmerald_svg__h" x1="35.176%" x2="81.822%" y1="-38.549%" y2="36.613%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                            <linearGradient id="GemstoneEmerald_svg__i" x1="50%" x2="92.06%" y1="-40.793%" y2="69.072%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                            <linearGradient id="GemstoneEmerald_svg__j" x1="15.902%" x2="18.016%" y1="29.086%" y2="56.587%">
+                                <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                <stop offset="100%" stop-color="#3F9616"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill-rule="nonzero" fill="none">
+                            <path fill="url(#GemstoneEmerald_svg__a)" d="M16.558 51.651s0-.103 0 0l13.288-23.336-10.324-12.55L.715 48.748l15.843 2.904z"></path>
+                            <path fill="url(#GemstoneEmerald_svg__b)" d="M32.913 25.618c.103 0 .103 0 0 0l24.94-9.23h.103V0L22.59 13.068l10.323 12.55z"></path>
+                            <path fill="url(#GemstoneEmerald_svg__c)" d="M103.44 51.651l15.844-2.8-18.808-32.982-10.324 12.446 13.288 23.336c0-.104 0 0 0 0z"></path>
+                            <path fill="url(#GemstoneEmerald_svg__d)" d="M62.043 16.387l24.94 9.23h.103l10.323-12.549L62.043 0v16.387z"></path>
+                            <path fill="url(#GemstoneEmerald_svg__e)" d="M33.377 30.264L20.244 53.372c-.204.413-.306.928-.204 1.341l4.58 26.307c.102.515.306.928.713 1.238l20.158 17.227c.407.31.815.516 1.324.516h26.368c.51 0 .917-.206 1.324-.516l20.158-17.227c.407-.31.61-.723.713-1.238l4.581-26.306c.102-.516 0-.928-.204-1.341L86.521 30.264c-.203-.412-.61-.722-1.018-.928l-24.74-9.181c-.407-.207-.916-.207-1.425 0l-24.841 9.18c-.51.207-.815.517-1.12.93z"></path>
+                            <path fill="url(#GemstoneEmerald_svg__f)" d="M42.828 103.198L22.487 85.877 8.586 94.07l28.722 24.478z"></path>
+                            <path fill="url(#GemstoneEmerald_svg__g)" d="M97.513 85.877l-20.34 17.321h-.103l5.52 15.35 28.824-24.478-13.9-8.193z"></path>
+                            <path fill="url(#GemstoneEmerald_svg__h)" d="M104.158 55.695v.104l-4.599 26.447v.104l13.901 8.09 6.542-37.545z"></path>
+                            <path fill="url(#GemstoneEmerald_svg__i)" d="M20.443 82.246l-4.6-26.447v-.104L0 52.895 6.542 90.44z"></path>
+                            <path fill="url(#GemstoneEmerald_svg__j)" d="M73.287 104.65H46.609L41.09 120h37.615z"></path>
+                        </g>
+                    </svg></div>
+            </div>
+            <div>
+                <p class="mb-[2px]">Hi, nice to have you on board.</p>
+                <p class="mt-1.5 text-[28px] font-black leading-none">Enjoy your study session!</p>
+            </div>
+        </div>
+        <div class="flex justify-center gap-5 py-4 lg:order-last">
+            <div class="flex items-center" style="opacity:0;">
+                <div class="inline-flex items-center justify-center py-1 space-x-1 rounded-full px-2 bg-white text-gray-100">
+                    <div class="h-3 w-3 rounded-full bg-green-100"></div>
+                    <div class="text-xs"><strong id="Online" class="mr-1 font-black">17503</strong>Online</div>
+                </div>
+            </div>
+            <div class="st-onboarding-dashboard-create-new-room"><a href="{% url 'group_study' %}"><button class="btn btn-md btn-primary inline-flex"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.993 4.883A1 1 0 0011 5v6H5l-.117.007A1 1 0 005 13h6v6l.007.117A1 1 0 0013 19v-6h6l.117-.007A1 1 0 0019 11h-6V5l-.007-.117z" fill="currentColor"></path>
+                    </svg>Create new room</button></a></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="relative col-span-4 mt-4 xl:hidden">
+            <div class="flex items-center rounded ring-2 ring-inset bg-white ring-gray-300 focus-within:ring-secondary-300 ring-opacity-20 rounded-lg">
+                <div class="flex items-center justify-center pl-4 text-gray-300"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 16.797l-5-5m1.667-4.167a5.833 5.833 0 11-11.667 0 5.833 5.833 0 0111.667 0z" stroke="#7B7170" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div><input class="h-10 px-4 bg-transparent outline-none appearance-none text-sm text-gray-100 placeholder-gray-300 flex-1 w-full" placeholder="Search room">
+            </div>
+        </div>
+
+        <div class="st-onboarding-dashboard-solo-room mt-8">
+            <div class="relative overflow-hidden rounded-2xl bg-white p-4 text-white transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-lg " style="box-shadow:0px 4px 12px rgba(39, 17, 15, 0.2)"><video muted="" playsinline="" preload="auto" autoplay="" loop="" class="absolute top-0 left-0 z-0 flex h-full w-full overflow-hidden rounded-2xl object-cover">
+                    <source src="https://study-together-static-prod.st-static.com/solo-study-dashboard-tile-video/solo-room-card-bg.mp4" type="video/mp4"> Your browser does not support the video tag.
+                </video>
+                <div class="relative space-y-3 ">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <div class="inline-flex h-6 items-center space-x-1.5 whitespace-nowrap rounded-lg border-2 border-solid bg-white px-1.5 text-green-100 border-white" data-testid="liveTag">
+                                <div class="h-4 w-4"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" width="1000" height="1000" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+                                        <defs>
+                                            <clipPath id="__lottie_element_72">
+                                                <rect width="1000" height="1000" x="0" y="0"></rect>
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#__lottie_element_72)">
+                                            <g style="display: none;">
+                                                <g>
+                                                    <path></path>
+                                                </g>
+                                            </g>
+                                            <g transform="matrix(0.9835795760154724,0,0,0.9835795760154724,500,500)" opacity="0.0055367415730340494" style="display: none;">
+                                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                                    <path fill="rgb(108,161,72)" fill-opacity="1" d=" M0,-500 C275.95001220703125,-500 500,-275.95001220703125 500,0 C500,275.95001220703125 275.95001220703125,500 0,500 C-275.95001220703125,500 -500,275.95001220703125 -500,0 C-500,-275.95001220703125 -275.95001220703125,-500 0,-500z"></path>
+                                                </g>
+                                            </g>
+                                            <g transform="matrix(0.7360619902610779,0,0,0.7360619902610779,500,500)" opacity="0.2583635955056182" style="display: block;">
+                                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                                    <path fill="rgb(108,161,72)" fill-opacity="1" d=" M0,-500 C275.95001220703125,-500 500,-275.95001220703125 500,0 C500,275.95001220703125 275.95001220703125,500 0,500 C-275.95001220703125,500 -500,275.95001220703125 -500,0 C-500,-275.95001220703125 -275.95001220703125,-500 0,-500z"></path>
+                                                </g>
+                                            </g>
+                                            <g transform="matrix(0.4060620367527008,0,0,0.4060620367527008,500,500)" opacity="0.5954422471910116" style="display: block;">
+                                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                                    <path fill="rgb(108,161,72)" fill-opacity="1" d=" M0,-500 C275.95001220703125,-500 500,-275.95001220703125 500,0 C500,275.95001220703125 275.95001220703125,500 0,500 C-275.95001220703125,500 -500,275.95001220703125 -500,0 C-500,-275.95001220703125 -275.95001220703125,-500 0,-500z"></path>
+                                                </g>
+                                            </g>
+                                            <g style="display: block;" transform="matrix(0.07606203854084015,0,0,0.07606203854084015,500,500)" opacity="0.9325208988764048">
+                                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                                    <path fill="rgb(108,161,72)" fill-opacity="1" d=" M0,-500 C275.95001220703125,-500 500,-275.95001220703125 500,0 C500,275.95001220703125 275.95001220703125,500 0,500 C-275.95001220703125,500 -500,275.95001220703125 -500,0 C-500,-275.95001220703125 -275.95001220703125,-500 0,-500z"></path>
+                                                </g>
+                                            </g>
+                                            <g style="display: none;" transform="matrix(0.6645685434341431,0,0,0.6645685434341431,500,500)" opacity="0.33139067415730283">
+                                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                                    <path fill="rgb(108,161,72)" fill-opacity="1" d=" M0,-500 C275.95001220703125,-500 500,-275.95001220703125 500,0 C500,275.95001220703125 275.95001220703125,500 0,500 C-275.95001220703125,500 -500,275.95001220703125 -500,0 C-500,-275.95001220703125 -275.95001220703125,-500 0,-500z"></path>
+                                                </g>
+                                            </g>
+                                            <g style="display: none;" transform="matrix(0.3345685303211212,0,0,0.3345685303211212,500,500)" opacity="0.6684693258426961">
+                                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                                    <path fill="rgb(108,161,72)" fill-opacity="1" d=" M0,-500 C275.95001220703125,-500 500,-275.95001220703125 500,0 C500,275.95001220703125 275.95001220703125,500 0,500 C-275.95001220703125,500 -500,275.95001220703125 -500,0 C-500,-275.95001220703125 -275.95001220703125,-500 0,-500z"></path>
+                                                </g>
+                                            </g>
+                                            <g style="display: none;">
+                                                <g>
+                                                    <path></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></div><span class="text-xs font-bold text-current">Live</span>
+                            </div>
+                            <div class="text-lg font-bold">Solo Study Room</div>
+                        </div>
+{#                        <div class="jsx-113523437 room-features flex items-center space-x-2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="h-5 w-5">#}
+{#                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.01 18.818h8.036a2.545 2.545 0 002.545-2.545v-1.92l3.828 2.733A1 1 0 0022 16.273V8.545a1 1 0 00-1.581-.813l-3.828 2.734v-1.92a2.572 2.572 0 00-.017-.292l-1.983 1.984v6.035a.545.545 0 01-.545.545H8.01l-2 2zM5.545 8h6.097l2-2H5.545A2.545 2.545 0 003 8.545v7.728c0 .117.008.233.023.346L5 14.642V8.545c0-.3.244-.545.545-.545zm11.766 4.409L20 14.329v-3.84l-2.689 1.92z" fill="#FF6F61"></path>#}
+{#                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.707 20.707a1 1 0 010-1.414L18.263 3.737a1 1 0 111.415 1.414L4.12 20.707a1 1 0 01-1.414 0z" fill="#9656A1"></path>#}
+{#                            </svg><svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="h-5 w-5">#}
+{#                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.983 12.742a6.253 6.253 0 003.14 1.366v1.725h-.876c-.484 0-.876.373-.876.834 0 .46.392.833.876.833h3.505c.483 0 .875-.373.875-.833 0-.46-.392-.834-.876-.834h-.875v-1.725c2.283-.311 4.159-1.818 4.907-3.83.16-.434-.078-.91-.534-1.064-.457-.153-.957.074-1.118.508-.602 1.62-2.226 2.778-4.132 2.778a4.5 4.5 0 01-2.806-.968l-1.21 1.21zm2.436-2.436a2.628 2.628 0 004.208-2.1V6.097L8.42 10.306zm3.953-6.31L7.465 8.903a2.631 2.631 0 01-.094-.698V5.128a2.628 2.628 0 015-1.132zm-6.26 6.26L4.857 11.51a5.701 5.701 0 01-.64-1.233c-.162-.434.077-.91.533-1.064.457-.153.957.074 1.118.508.069.184.15.363.244.534z" fill="#9656A1"></path>#}
+{#                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.744 16.91a.833.833 0 010-1.179L15.707 2.767a.833.833 0 111.179 1.179L3.922 16.91a.833.833 0 01-1.178 0z" fill="#FF6F61"></path>#}
+{#                            </svg><svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="h-5 w-5">#}
+{#                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.833 6.668v1.667h.833c.428 0 .78.321.828.736l.006.097v5c0 .427-.322.78-.736.828l-.098.005H15a.833.833 0 00-.828.737l-.006.097v.833l-2-1.5a.832.832 0 00-.392-.16l-.108-.007h-2.5l-1.902 1.427c.282.134.594.217.922.236l.147.004h3.056l3.11 2.333a.834.834 0 001.33-.575l.004-.091v-1.667h.833a2.5 2.5 0 002.496-2.353l.004-.147v-5a2.5 2.5 0 00-2.353-2.496l-.147-.004h-.833z" fill="#9656A1"></path>#}
+{#                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.667 3.332a2.5 2.5 0 012.496 2.353l.004.147v5a2.5 2.5 0 01-2.353 2.496l-.147.004H8.611l-3.11 2.333a.834.834 0 01-1.329-.574l-.005-.092v-1.667h-.833a2.5 2.5 0 01-2.496-2.353l-.004-.147v-5a2.5 2.5 0 012.353-2.496l.147-.004h8.333zM5.001 9.165A.833.833 0 105 7.5a.833.833 0 000 1.666zm2.5 0a.833.833 0 100-1.666.833.833 0 000 1.666zm3.333-.833a.833.833 0 11-1.667 0 .833.833 0 011.667 0z" fill="#FF6F61"></path>#}
+{#                            </svg></div>#}
+                    </div>
+                    <div class="text-sm">
+                        <div> <strong class="font-bold">100% focus?</strong> Set the scene with atmospheric backgrounds, use timer and goal setting and study in your solo study room.</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="h-8 w-8 pl-1">
+                            <div class="user-image user-image--small"><span class="user-image__avatar user-image__avatar--emerald object-cover"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2740%27%20height=%2740%27/%3E"></span><img alt="user" src="{% static 'images/avatar-6.png' %}" decoding="async" data-nimg="intrinsic" class="user-image__avatar-image user-image__avatar--emerald" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span></span><svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" class="user-image__gem">
+                                    <defs>
+                                        <linearGradient id="GemstoneEmerald_svg__a" x1="36.734%" x2="77.236%" y1="0%" y2="171.671%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="GemstoneEmerald_svg__b" x1="29.869%" x2="32.249%" y1="23.765%" y2="181.606%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="GemstoneEmerald_svg__c" x1="36.656%" x2="80.707%" y1="0%" y2="75.032%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="GemstoneEmerald_svg__d" x1="29.868%" x2="56.977%" y1="23.765%" y2="94.886%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="GemstoneEmerald_svg__e" x1="29.869%" x2="79.664%" y1="0%" y2="84.817%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="GemstoneEmerald_svg__f" x1="50%" x2="74.847%" y1="-21.081%" y2="82.745%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="GemstoneEmerald_svg__g" x1="-39.255%" x2="73.311%" y1="-54.056%" y2="86.124%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="GemstoneEmerald_svg__h" x1="35.176%" x2="81.822%" y1="-38.549%" y2="36.613%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="GemstoneEmerald_svg__i" x1="50%" x2="92.06%" y1="-40.793%" y2="69.072%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="GemstoneEmerald_svg__j" x1="15.902%" x2="18.016%" y1="29.086%" y2="56.587%">
+                                            <stop offset="3.131%" stop-color="#CCFFB5"></stop>
+                                            <stop offset="41.512%" stop-color="#A1D38A"></stop>
+                                            <stop offset="100%" stop-color="#3F9616"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <g fill-rule="nonzero" fill="none">
+                                        <path fill="url(#GemstoneEmerald_svg__a)" d="M16.558 51.651s0-.103 0 0l13.288-23.336-10.324-12.55L.715 48.748l15.843 2.904z"></path>
+                                        <path fill="url(#GemstoneEmerald_svg__b)" d="M32.913 25.618c.103 0 .103 0 0 0l24.94-9.23h.103V0L22.59 13.068l10.323 12.55z"></path>
+                                        <path fill="url(#GemstoneEmerald_svg__c)" d="M103.44 51.651l15.844-2.8-18.808-32.982-10.324 12.446 13.288 23.336c0-.104 0 0 0 0z"></path>
+                                        <path fill="url(#GemstoneEmerald_svg__d)" d="M62.043 16.387l24.94 9.23h.103l10.323-12.549L62.043 0v16.387z"></path>
+                                        <path fill="url(#GemstoneEmerald_svg__e)" d="M33.377 30.264L20.244 53.372c-.204.413-.306.928-.204 1.341l4.58 26.307c.102.515.306.928.713 1.238l20.158 17.227c.407.31.815.516 1.324.516h26.368c.51 0 .917-.206 1.324-.516l20.158-17.227c.407-.31.61-.723.713-1.238l4.581-26.306c.102-.516 0-.928-.204-1.341L86.521 30.264c-.203-.412-.61-.722-1.018-.928l-24.74-9.181c-.407-.207-.916-.207-1.425 0l-24.841 9.18c-.51.207-.815.517-1.12.93z"></path>
+                                        <path fill="url(#GemstoneEmerald_svg__f)" d="M42.828 103.198L22.487 85.877 8.586 94.07l28.722 24.478z"></path>
+                                        <path fill="url(#GemstoneEmerald_svg__g)" d="M97.513 85.877l-20.34 17.321h-.103l5.52 15.35 28.824-24.478-13.9-8.193z"></path>
+                                        <path fill="url(#GemstoneEmerald_svg__h)" d="M104.158 55.695v.104l-4.599 26.447v.104l13.901 8.09 6.542-37.545z"></path>
+                                        <path fill="url(#GemstoneEmerald_svg__i)" d="M20.443 82.246l-4.6-26.447v-.104L0 52.895 6.542 90.44z"></path>
+                                        <path fill="url(#GemstoneEmerald_svg__j)" d="M73.287 104.65H46.609L41.09 120h37.615z"></path>
+                                    </g>
+                                </svg></div>
+                        </div><a href="{% url 'solo_study' %}">
+                        <button class="btn btn-md bg-white px-2.5 pr-4 text-primary"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path d="M12.782 15.123a1 1 0 00-1.477-1.342l-.084.093-2 2.5a1 1 0 001.477 1.342l.084-.093 2-2.5z" fill="#FF6F61"></path>
+                                    <path d="M14.626 12.78a1 1 0 00.229-1.304l-.073-.102-4-4.999a1 1 0 00-1.634 1.147l.073.103 4 4.998a1 1 0 001.405.156z" fill="#9656A1" fill-rule="nonzero"></path>
+                                </g>
+                            </svg>
+                            <div class="text-sm font-bold">Start solo study</div>
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+   </body>
+</html>
