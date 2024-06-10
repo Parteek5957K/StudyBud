@@ -509,16 +509,80 @@
                     </div>
                     <div class="navigation__backdrop"></div>
                 </nav>
+				<script>
+                    function rendbg(event)
+                                {
+                                    var a = document.getElementById("video-player1");
+                                    var b = document.getElementById("video-player2");
+                                    var c = document.getElementById("video-player3");
+                                    var d = document.getElementById("video-player4");
+                                    var e = document.getElementById("video-player5");
+                                    var f = document.getElementById("video-player6");
+                                    var g = document.getElementById("video-player7");
+                                    var h = document.getElementById("video-player8");
+                                    var i = document.getElementById("video-player9");
+                                    var x = document.getElementById(event);
+                                    a.style.display = 'none';
+                                    b.style.display = 'none';
+                                    c.style.display = 'none';
+                                    d.style.display = 'none';
+                                    e.style.display = 'none';
+                                    f.style.display = 'none';
+                                    g.style.display = 'none';
+                                    h.style.display = 'none';
+                                    i.style.display = 'none';
+
+                                    if (x === a)
+                                    {
+                                        a.style.display = "block";
+                                    } 
+                                    if (event === b.id) 
+                                    {
+                                        b.style.display = "block";
+                                    } 
+                                    if (x === c) 
+                                    {
+                                        c.style.display = "block";
+                                    } 
+                                    if( x === d)
+                                    {
+                                        d.style.display = "block";
+                                    }
+                                    if( x === e)
+                                    {
+                                        e.style.display = "block";
+                                    }
+                                    if( x === f)
+                                    {
+                                        f.style.display = "block";
+                                    }
+                                    if( x === g)
+                                    {
+                                        g.style.display = "block";
+                                    }
+                                    if( x === h)
+                                    {
+                                        h.style.display = "block";
+                                    }
+                                    if( x === i)
+                                    {
+                                        i.style.display = "block";
+                                    }
+                                }
+                </script>
                 <main class="relative mt-12 h-[calc(100vh)] md:h-full md:mt-0">
-                    <div id="video-player" class="pointer-events-none">
-                        <iframe id="video-player"
-                                class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2"
-                                frameborder="0" allowfullscreen=""
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                title="Floating City 🍃 Chill Lofi Beats" width="640" height="360"
-{#                                src="{% static 'images/img.jpeg' %}"#}
-                                                                src="https://www.youtube.com/embed/1oahTaVIQvk?start=60&amp;loop=1&amp;playlist=1oahTaVIQvk&amp;showinfo=0&amp;controls=0&amp;disablekb=0&amp;fs=0&amp;rel=0&amp;iv_load_policy=3&amp;autoplay=1&amp;mute=1&amp;modestbranding=1&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fapp.studytogether.com&amp;widgetid=1"></iframe>
+                    <div>
+                        <iframe id="video-player1" class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Floating City 🍃 Chill Lofi Beats" width="640" height="360" src="{% static 'images/img3.wallspic.com-bagan-tanjiro_kamado-demon_slayer_kimetsu_no_yaiba-art-digital_art-3840x2160.png'%}"></iframe>
+                        <iframe id="video-player2" class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Floating City 🍃 Chill Lofi Beats" width="640" height="360" src="{% static 'images/Parteek_5.jpeg'%}"></iframe>
+                        <iframe id="video-player3" class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Floating City 🍃 Chill Lofi Beats" width="640" height="360" src="{% static 'images/Parteek_6.jpeg'%}"></iframe>
+                        <iframe id="video-player4" class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Floating City 🍃 Chill Lofi Beats" width="640" height="360" src="{% static 'images/spiderman-into-the-spider-verse-2018-movies-movies-spiderman-wallpaper-preview.jpg' %}"></iframe>
+                        <iframe id="video-player5" class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Floating City 🍃 Chill Lofi Beats" width="640" height="360" src="{% static 'images/k2.jpg'%}"></iframe>
+                        
+						<iframe id="video-player6" class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Floating City 🍃 Chill Lofi Beats" width="640" height="360" src="{% static 'images/k5.jpg'%}"></iframe>
+                        
+						<iframe id="video-player7" class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Floating City 🍃 Chill Lofi Beats" width="640" height="360" src="{% static 'images/wp1892140.webp' %}"></iframe>
+                        <iframe id="video-player8" class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Floating City 🍃 Chill Lofi Beats" width="640" height="360" src="{% static 'images/w1.jpg' %}"></iframe>
+                        <iframe id="video-player9" class="pointer-events-none absolute left-1/2 top-1/2 box-border h-[56.25vw] min-h-full w-screen min-w-full -translate-x-1/2 -translate-y-1/2" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Floating City 🍃 Chill Lofi Beats" width="640" height="360" src="{% static 'images/spirited-away-vp-1920x1080.jpg'%}"></iframe>
                     </div>
                     <div class="relative">
                         <div class="absolute top-[calc(48px+16px)] left-0 z-10 md:left-auto md:right-0">
@@ -1562,7 +1626,8 @@
                                 </div>
                             </div>
                             <div class="rounded-vic bg-gray-3qo bg-opacity-x4t p-xfm text-9ab backdrop-6n8"
-                                 class="close" id="close-stats" style="width: 270px;margin-top: 25%;display: none;">
+                                 class="close" id="close-statss" style="width: 270px;margin-top: 25%;display: none;">
+                                 class="close" id="close-statss" style="width: 270px;margin-top: 25%;display: none;">
                                 <div class="mb-4pv fle-1wr item-c57 justify-lia" id="close-stats">
                                     <div class="fle-1wr item-c57 space-x-ck6">
                                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -2019,34 +2084,34 @@
                                         <div class="rel-ehy">
                                             <div class="grid-cah grid-ang grid-99v gap-1cv">
                                                 <div class="rel-ehy overflow-c4b rounded-fx7 border-vma border-tkl border-gray-2pg hovercursor-fov hoverborder-gray-cn9">
-                                                    <span id="style-k5tJq" class="style-k5tJq"><span id="style-kARKg"
-                                                                                                     class="style-kARKg"><img
+                                                    <span id="style-k5tJq" class="style-k5tJq" onclick="rendbg('video-player1')"><span id="style-kARKg"
+                                                                                                     class="style-kARKg"><img 
                                                             src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%27128%27/%3E"
                                                             id="style-PNfiv" class="style-PNfiv"></span><img
                                                             src="https://study-together-static-prod.st-static.com/solo-thumbnails/1-1.png"
                                                             class="object-s4v object-337 style-CZY9Y" id="style-CZY9Y"></span>
                                                 </div>
                                                 <div class="rel-ehy overflow-c4b rounded-fx7 border-vma border-tkl border-gray-2pg hovercursor-fov hoverborder-gray-cn9">
-                                                    <span id="style-nG7EX" class="style-nG7EX"><span id="style-UAiIg"
-                                                                                                     class="style-UAiIg"><img
+                                                    <span id="style-nG7EX" class="style-nG7EX" onclick="rendbg('video-player2')"><span id="style-UAiIg"
+                                                                                                     class="style-UAiIg"><img 
                                                             src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%27128%27/%3E"
                                                             id="style-2BcZz" class="style-2BcZz"></span><img
                                                             src="https://study-together-static-prod.st-static.com/solo-thumbnails/1-2.png"
                                                             class="object-s4v object-337 style-8GR7Z" id="style-8GR7Z"></span>
                                                 </div>
                                                 <div class="rel-ehy overflow-c4b rounded-fx7 border-vma border-tkl border-gray-2pg hovercursor-fov hoverborder-gray-cn9">
-                                                    <span id="style-VPJNR" class="style-VPJNR"><span id="style-coGD9"
-                                                                                                     class="style-coGD9"><img
+                                                    <span id="style-VPJNR" class="style-VPJNR" onclick="rendbg('video-player3')"><span id="style-coGD9"
+                                                                                                     class="style-coGD9"><img 
                                                             src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%27128%27/%3E"
                                                             id="style-S3gLI" class="style-S3gLI"></span><img
                                                             src="https://study-together-static-prod.st-static.com/solo-thumbnails/1-3.png"
                                                             class="object-s4v object-337 style-xM4vA" id="style-xM4vA"></span>
                                                 </div>
                                                 <div class="rel-ehy overflow-c4b rounded-fx7 border-vma border-tkl border-gray-2pg hovercursor-fov hoverborder-gray-cn9 border-4sa">
-                                                    <span id="style-yoSaK" class="style-yoSaK"><span id="style-YY4N5"
-                                                                                                     class="style-YY4N5"><img
+                                                    <span id="style-yoSaK" class="style-yoSaK" onclick="rendbg('video-player4')"><span id="style-YY4N5"
+                                                                                                     class="style-YY4N5"><img 
                                                             src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%27128%27/%3E"
-                                                            id="style-QAK3k" class="style-QAK3k"></span><img
+                                                            id="style-QAK3k" class="style-QAK3k"></span><img 
                                                             src="https://study-together-static-prod.st-static.com/solo-thumbnails/1-4.png"
                                                             class="object-s4v object-337 opacity-hfo style-Em9y7"
                                                             id="style-Em9y7"></span>
@@ -2063,7 +2128,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="rel-ehy overflow-c4b rounded-fx7 border-vma border-tkl border-gray-2pg hovercursor-fov hoverborder-gray-cn9">
-                                                    <span id="style-cWk6V" class="style-cWk6V"><span id="style-4qZMP"
+                                                    <span id="style-cWk6V" class="style-cWk6V" onclick="rendbg('video-player5')"><span id="style-4qZMP"
                                                                                                      class="style-4qZMP"><img
                                                             src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%27128%27/%3E"
                                                             id="style-5vsym" class="style-5vsym"></span><img
@@ -2071,7 +2136,7 @@
                                                             class="object-s4v object-337 style-MUZrN" id="style-MUZrN"></span>
                                                 </div>
                                                 <div class="rel-ehy overflow-c4b rounded-fx7 border-vma border-tkl border-gray-2pg hovercursor-fov hoverborder-gray-cn9">
-                                                    <span id="style-HLrmb" class="style-HLrmb"><span id="style-lRUXg"
+                                                    <span id="style-HLrmb" class="style-HLrmb" onclick="rendbg('video-player6')"><span id="style-lRUXg"
                                                                                                      class="style-lRUXg"><img
                                                             src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%27128%27/%3E"
                                                             id="style-E3qIZ" class="style-E3qIZ"></span><img
@@ -2079,7 +2144,7 @@
                                                             class="object-s4v object-337 style-ZSpmH" id="style-ZSpmH"></span>
                                                 </div>
                                                 <div class="rel-ehy overflow-c4b rounded-fx7 border-vma border-tkl border-gray-2pg hovercursor-fov hoverborder-gray-cn9">
-                                                    <span id="style-vRBDM" class="style-vRBDM"><span id="style-Ci6b4"
+                                                    <span id="style-vRBDM" class="style-vRBDM" onclick="rendbg('video-player7')"><span id="style-Ci6b4"
                                                                                                      class="style-Ci6b4"><img
                                                             src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%27128%27/%3E"
                                                             id="style-3oONH" class="style-3oONH"></span><img
@@ -2087,7 +2152,7 @@
                                                             class="object-s4v object-337 style-R9rFw" id="style-R9rFw"></span>
                                                 </div>
                                                 <div class="rel-ehy overflow-c4b rounded-fx7 border-vma border-tkl border-gray-2pg hovercursor-fov hoverborder-gray-cn9">
-                                                    <span id="style-G75cm" class="style-G75cm"><span id="style-przOQ"
+                                                    <span id="style-G75cm" class="style-G75cm" onclick="rendbg('video-player8')"><span id="style-przOQ"
                                                                                                      class="style-przOQ"><img
                                                             src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%27128%27/%3E"
                                                             id="style-7BDTD" class="style-7BDTD"></span><img
@@ -2095,7 +2160,7 @@
                                                             class="object-s4v object-337 style-rZ6SM" id="style-rZ6SM"></span>
                                                 </div>
                                                 <div class="rel-ehy overflow-c4b rounded-fx7 border-vma border-tkl border-gray-2pg hovercursor-fov hoverborder-gray-cn9">
-                                                    <span id="style-gIh1S" class="style-gIh1S"><span id="style-Axi5S"
+                                                    <span id="style-gIh1S" class="style-gIh1S" onclick="rendbg('video-player9')"><span id="style-Axi5S"
                                                                                                      class="style-Axi5S"><img
                                                             src="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%27128%27/%3E"
                                                             id="style-Ocopt" class="style-Ocopt"></span><img
@@ -2772,7 +2837,7 @@
                             </div>
                         </div>
                         <div class="fixed bottom-5 z-10 md:right-[74px] md:bottom-[32px] flex h-8 w-[calc(100%-100px)] items-center justify-between md:w-auto  flex-row-reverse">
-                            <a href="{% url 'dashboard' %}"><button class="max-w-12 path--fill-current max-h-12 rounded-lg bg-gray-700 p-3 text-secondary-200 hover:cursor-pointer hover:bg-opacity-70">
+                            <a href="{% url 'dashboard' %}"><button title="Go to Dashboard" class="max-w-12 path--fill-current max-h-12 rounded-lg bg-gray-700 p-3 text-secondary-200 hover:cursor-pointer hover:bg-opacity-70">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg" class="icons--small">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2861,8 +2926,6 @@
     <div data-tether-id="1" style="top: 0px; left: 0px; position: absolute;"></div>
 </div>
 
-
-
 <script src="{% static 'js/timer.js' %}"></script>
 <script src="{% static 'js/todo.js' %}"></script>
 <script>
@@ -2918,6 +2981,8 @@
             g.style.display = "block";
         }
     }
+    myFunction('close-goals');
+    myFunction('close-timer');
 </script>
 </body>
 </html>
